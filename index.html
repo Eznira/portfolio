@@ -13,33 +13,149 @@
 
   <body>
     <!-- Head Section -->
-
-    <h2>Arinze Ihim</h2>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#contacts">Contact</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
+    <div role="navigation">
+      <h2>Arinze Ihim</h2>
+      <ul>
+        <li><a href="#all">All</a></li>
+        <li><a href="#contacts">Contact</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+      <div><a href="#about">About</a></div>
+    </div>
 
     <!-- Hero Section -->
+    <div>
+      <div>
+        <div>
+          <h1>Hi, I'm <span>Arinze Ihim</span></h1>
+          <h3>Frontend Developer & Product Designer</h3>
+          <p>
+            I'm a software developer specializing in building exceptional
+            digital experiences. Currently, I'm focused on building responsive
+            full-stack web applications.
+          </p>
+        </div>
 
-    <h1>Hi, I'm Arinze Ihim</h1>
-    <h3>Frontend Developer & Product Designer</h3>
-    <p>
-      I'm a software developer specializing in building exceptional digital
-      experiences. Currently, I'm focused on building responsive full-stack web
-      applications.
-    </p>
+        <div>
+          <button>Hire Me?</button>
+          <button>Let's Connect</button>
+        </div>
 
-    <ul>
-      <li><a href="#projects">Hire Me?</a></li>
-      <li><a href="#about">Let's Connect</a></li>
-    </ul>
+        <div>
+          <ul>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <img src="arinze_shot.png" alt="" width="300" />
+      </div>
+    </div>
 
-    <ul>
-      <i class="fa-brands fa-square-facebook"></i>
-      <i class="fa-solid fa-x"></i>
-    </ul>
+    <br /><br />
+
+    <!-- Skills Section -->
+    <div>
+      <div>
+        <i class="fa-solid fa-bolt"></i>
+        <h2>Skills</h2>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-palette"></i>
+        <h2>UI/UX Design</h2>
+        <p>Designing intuitive and engaging user experiences.</p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Frontend Development</h2>
+        <p>Building responsive and interactive web applications.</p>
+      </div>
+    </div>
+
+    <!-- Project section -->
+    <div>
+      <h2>Projects</h2>
+      <br />
+
+      <div>
+        <div>
+          <img
+            src="https://cdn.dribbble.com/userupload/32643395/file/original-85bba5da4f4df2c5665c968bf6880721.png?resize=1504x1128&vertical=center&quot"
+            width="300"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Github</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Portfolio Landing Page</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Asperiores, incidunt iusto qui cupiditate mollitia repellat, eveniet
+            officia provident minus dolore quam. Sapiente voluptatem illo minima
+            similique ab fugiat harum exercitationem!
+          </p>
+        </div>
+
+        <div>
+          <button>View Demo</button>
+          <button>Github Repo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div>
+      <div>
+        <h2>Contact</h2>
+      </div>
+
+      <div>
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+
+          <br /><br />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+
+          <br /><br />
+
+          <label for="phone">phone</label>
+          <input type="tel" id="phone" />
+
+          <br /><br />
+
+          <label for="msg">Message</label>
+          <br />
+          <textarea type="text" id="msg" placeholder="Your message"></textarea>
+          <br /><br />
+          <button>Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div>
+      <footer>
+        <p>&copy; <span id="year"></span> | Double D | All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
