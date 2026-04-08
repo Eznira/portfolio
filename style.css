@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  /* =========================
+     BACKGROUND (60%)
+  ========================= */
+  --bg-base: #0b1411;
+  --bg-tint-1: #0f1c17;
+  --bg-tint-2: #13241d;
+  --bg-shade-1: #08100d;
+  --bg-shade-2: #050a08;
+  --bg-shade-3: #020504;
+
+  /* =========================
+     SURFACE (Cards, Modals)
+  ========================= */
+  --surface-base: #12201a;
+  --surface-tint-1: #162822;
+  --surface-tint-2: #1a3129;
+  --surface-shade-1: #0e1915;
+  --surface-shade-2: #0a1411;
+  --surface-shade-3: #060c09;
+
+  /* =========================
+     TEXT (high contrast)
+  ========================= */
+  --text-primary: #e6f1ec;
+  --text-secondary: #a7b8b0;
+  --text-muted: #6b7f76;
+
+  --text-tint: #ffffff;
+  --text-shade-1: #c6d6cf;
+  --text-shade-2: #8fa39a;
+
+  /* =========================
+     BORDER
+  ========================= */
+  --border-base: #1f3a30;
+  --border-tint-1: #2a4a3e;
+  --border-tint-2: #355c4d;
+  --border-shade-1: #162a22;
+  --border-shade-2: #0f1e18;
+  --border-shade-3: #09130f;
+
+  /* =========================
+     BRAND (Primary Green 🌿)
+  ========================= */
+  --brand-base: #2a8c68;
+
+  --brand-tint-1: #5fb598;
+  --brand-tint-2: #8fd0b8;
+  --brand-tint-3: #c7e9dd;
+
+  --brand-shade-1: #1f6f54;
+  --brand-shade-2: #16523e;
+  --brand-shade-3: #0c3628;
+
+  /* =========================
+     ACCENT (10%)
+  ========================= */
+  --accent-base: #e94f37;
+
+  --accent-tint-1: #f27a67;
+  --accent-tint-2: #f7a79b;
+  --accent-tint-3: #fbd2cb;
+
+  --accent-shade-1: #c63f2b;
+  --accent-shade-2: #9e3222;
+  --accent-shade-3: #762419;
+
+  /* =========================
+     SEMANTIC COLORS
+  ========================= */
+
+  /* SUCCESS */
+  --success-base: #22c55e;
+  --success-tint-1: #4ade80;
+  --success-tint-2: #86efac;
+  --success-tint-3: #14532d;
+  --success-shade-1: #16a34a;
+  --success-shade-2: #15803d;
+  --success-shade-3: #166534;
+
+  /* WARNING */
+  --warning-base: #fbbf24;
+  --warning-tint-1: #fcd34d;
+  --warning-tint-2: #fde68a;
+  --warning-tint-3: #78350f;
+  --warning-shade-1: #d97706;
+  --warning-shade-2: #b45309;
+  --warning-shade-3: #92400e;
+
+  /* ERROR */
+  --error-base: #f87171;
+  --error-tint-1: #fca5a5;
+  --error-tint-2: #fecaca;
+  --error-tint-3: #7f1d1d;
+  --error-shade-1: #dc2626;
+  --error-shade-2: #b91c1c;
+  --error-shade-3: #991b1b;
+
+  /* INFO */
+  --info-base: #60a5fa;
+  --info-tint-1: #93c5fd;
+  --info-tint-2: #bfdbfe;
+  --info-tint-3: #1e3a8a;
+  --info-shade-1: #3b82f6;
+  --info-shade-2: #2563eb;
+  --info-shade-3: #1d4ed8;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: "Lora", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--brand-base);
+  text-decoration: none;
+}
+
+p  {
+  color: var(--text-secondary);
+}

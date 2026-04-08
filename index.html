@@ -9,29 +9,30 @@
       src="https://kit.fontawesome.com/21b9cc962b.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!-- Header Section -->
-    <header>
+    <header class="header-section">
       <!-- Navigation -->
       <nav>
         <h2><a href="/">Arinze Ihim</a></h2>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#about-us">About us</a></li>
         </ul>
-        <div><a href="#contact">Contact</a></div>
+        <div class="navbar-contact"><a href="#contact">Contact</a></div>
       </nav>
 
       <!-- Hero Section -->
-      <div>
-        <div>
-          <div>
-            <h1>Hi, I'm <span>Arinze Ihim</span></h1>
-            <h3>Frontend Developer & Product Designer</h3>
-            <p>
+      <section class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-text-title">Hi, I'm <span>Arinze Ihim</span></h1>
+            <h3 class="hero-text-sub">Frontend Developer & Product Designer</h3>
+            <p class="hero-text-description">
               I'm a software developer specializing in building exceptional
               digital experiences. Currently, I'm focused on building responsive
               full-stack web applications.
@@ -39,8 +40,8 @@
           </div>
 
           <div>
-            <button>Hire Me?</button>
-            <button>Let's Connect</button>
+            <button class="btn btn-primary">Hire Me?</button>
+            <button class="btn btn-secondary">Let's Connect</button>
           </div>
 
           <div>
@@ -51,108 +52,131 @@
           </div>
         </div>
         <div>
-          <img src="arinze_shot.png" alt="" width="300" />
+          <img src="arinze_shot.png" alt="Profile Picture" width="200" />
         </div>
-      </div>
+      </section>
     </header>
 
     <br /><br />
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div>
-        <i class="fa-solid fa-bolt"></i>
-        <h2>Skills</h2>
-      </div>
+    <main class="container">
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <div class="skills-title">
+          <i class="fa-solid fa-bolt"></i>
+          <h2>Skills</h2>
+        </div>
 
-      <div>
-        <i class="fa-solid fa-palette"></i>
-        <h2>UI/UX Design</h2>
-        <p>Designing intuitive and engaging user experiences.</p>
-      </div>
+        <div class="skills-container">
+          <div class="skills-card">
+            <i class="fa-solid fa-palette"></i>
+            <h2>UI/UX Design</h2>
+            <p>Designing intuitive and engaging user experiences.</p>
+          </div>
 
-      <div>
-        <i class="fa-solid fa-code"></i>
-        <h2>Frontend Development</h2>
-        <p>Building responsive and interactive web applications.</p>
-      </div>
-    </section>
+          <div class="skills-card">
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Development</h2>
+            <p>Building responsive and interactive web applications.</p>
+          </div>
 
-    <!-- Projects section -->
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <br />
+          <div class="skills-card">
+            <i class="fa-solid fa-database"></i>
+            <h2>Backend Development</h2>
+            <p>Scalable logic and clean codebases using modern technologies</p>
+          </div>
 
-      <div>
+          <div class="skills-card">
+            <i class="fa-brands fa-figma"></i>
+            <h2>Figma</h2>
+            <p>
+              Prototyping and design system following the modern design
+              principles
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <br />
+
+        <div class="projects-container">
+          <div class="project-card">
+            <img
+              src="https://cdn.dribbble.com/userupload/32643395/file/original-85bba5da4f4df2c5665c968bf6880721.png?resize=1504x1128&vertical=center&quot"
+              width="300"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Github</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Portfolio Landing Page</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Asperiores, incidunt iusto qui cupiditate mollitia repellat,
+              eveniet officia provident minus dolore quam. Sapiente voluptatem
+              illo minima similique ab fugiat harum exercitationem!
+            </p>
+          </div>
+
+          <div>
+            <button>View Demo</button>
+            <button>Github Repo</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
         <div>
-          <img
-            src="https://cdn.dribbble.com/userupload/32643395/file/original-85bba5da4f4df2c5665c968bf6880721.png?resize=1504x1128&vertical=center&quot"
-            width="300"
-            alt=""
-          />
+          <h2>Contact</h2>
         </div>
 
         <div>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Github</li>
-          </ul>
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+
+            <br /><br />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+
+            <br /><br />
+
+            <label for="phone">phone</label>
+            <input type="tel" id="phone" />
+
+            <br /><br />
+
+            <label for="msg">Message</label>
+            <br />
+            <textarea
+              type="text"
+              id="msg"
+              placeholder="Your message"
+            ></textarea>
+            <br /><br />
+            <button>Send Message</button>
+          </form>
         </div>
-
-        <div>
-          <h2>Portfolio Landing Page</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Asperiores, incidunt iusto qui cupiditate mollitia repellat, eveniet
-            officia provident minus dolore quam. Sapiente voluptatem illo minima
-            similique ab fugiat harum exercitationem!
-          </p>
-        </div>
-
-        <div>
-          <button>View Demo</button>
-          <button>Github Repo</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div>
-        <h2>Contact</h2>
-      </div>
-
-      <div>
-        <form action="">
-          <label for="name">Name</label>
-          <input type="text" id="name" />
-
-          <br /><br />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" />
-
-          <br /><br />
-
-          <label for="phone">phone</label>
-          <input type="tel" id="phone" />
-
-          <br /><br />
-
-          <label for="msg">Message</label>
-          <br />
-          <textarea type="text" id="msg" placeholder="Your message"></textarea>
-          <br /><br />
-          <button>Send Message</button>
-        </form>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; <span id="year"></span> | Double D | All rights reserved.</p>
+      <p>&copy; <span id="year"></span> | Arinze Ihim | All rights reserved.</p>
     </footer>
 
     <script>
