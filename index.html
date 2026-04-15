@@ -17,13 +17,18 @@
     <header class="header-section">
       <!-- Navigation -->
       <nav>
-        <h2><a href="/">Arinze Ihim</a></h2>
+        <a href="/"><span>.</span>Arinze I</a>
         <ul>
           <li><a href="/">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#about-us">About us</a></li>
+          <li><a href="#about-us">About</a></li>
         </ul>
-        <div class="navbar-contact"><a href="#contact">Contact</a></div>
+        <div class="navbar-contact">
+          <a class="btn btn-primary" href="#contact"
+            ><i class="fa-brands fa-rocketchat"></i
+          ></a>
+        </div>
       </nav>
 
       <!-- Hero Section -->
@@ -39,19 +44,23 @@
             </p>
           </div>
 
-          <div>
-            <button class="btn btn-primary">Hire Me?</button>
-            <button class="btn btn-secondary">Let's Connect</button>
+          <div class="hero-btns">
+            <a class="btn btn-primary" href="#contact">Hire Me</a>
+            <a class="btn btn-secondary" href="#contact">Let's Talk</a>
           </div>
 
-          <div>
+          <div class="hero-icons">
             <ul>
-              <i class="fa-brands fa-square-facebook"></i>
-              <i class="fa-brands fa-x-twitter"></i>
+              <a class="hero-icon" href="#"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a class="hero-icon" href="#"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
             </ul>
           </div>
         </div>
-        <div>
+        <div class="hero-image">
           <img src="arinze_shot.png" alt="Profile Picture" width="200" />
         </div>
       </section>
@@ -111,8 +120,8 @@
             />
           </div>
 
-          <div>
-            <ul>
+          <div class="project-content">
+            <ul class="project-stack">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -120,7 +129,7 @@
             </ul>
           </div>
 
-          <div>
+          <div class="project-description">
             <h2>Portfolio Landing Page</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -130,7 +139,7 @@
             </p>
           </div>
 
-          <div>
+          <div class="project-btn">
             <button>View Demo</button>
             <button>Github Repo</button>
           </div>
@@ -138,25 +147,30 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="contact">
+      <section id="contacts" class="contacts-section">
         <div>
           <h2>Contact</h2>
         </div>
 
         <div>
-          <form action="">
+          <form action="" class="contact-form" id="contact-form">
             <label for="name">Name</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" placeholder="John Doe" required />
 
             <br /><br />
 
             <label for="email">Email</label>
-            <input type="email" id="email" />
+            <input
+              type="email"
+              id="email"
+              placeholder="john.doe@example.com"
+              required
+            />
 
             <br /><br />
 
             <label for="phone">phone</label>
-            <input type="tel" id="phone" />
+            <input type="tel" id="phone" placeholder="123-456-7890" />
 
             <br /><br />
 
@@ -175,7 +189,7 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer" class="footer">
       <p>&copy; <span id="year"></span> | Arinze Ihim | All rights reserved.</p>
     </footer>
 
