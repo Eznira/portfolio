@@ -128,11 +128,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 p {
   font-size: 0.8rem;
@@ -161,9 +161,11 @@ nav {
 }
 
 nav span {
-  font-size: 2rem;
-  color: var(--brand-base);
-  font-weight: bold;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--brand-base);
+  border-radius: 50%;
 }
 
 /* Hero Section */
@@ -198,6 +200,25 @@ nav span {
   padding: 0.5rem;
 }
 
+.hero-banner {
+  background-color: var(--brand-base);
+  color: var(--text-tint);
+  padding: 0.25rem 0.75rem;
+  border-radius: 10px;
+  font-size: 10px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.hero-banner span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-base);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
 /* Skills */
 .skills-card {
   background-color: #513f2f;
@@ -205,6 +226,35 @@ nav span {
   border-radius: 1rem;
   margin: 10px 0px;
 }
+
+/* CAT */
+.cat {
+  background-color: var(--surface-base);
+  color: var(--text-primary);
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+}
+
+.cat a {
+  background-color: #513f2f;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 12px;
+  margin: 1rem 0;
+}
+
+/* Footer */
+
+footer {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-base);
+}
+
 
 /* Buttons */
 .hero-btns {
